@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <h3 className="footer-title">SalesSavvy</h3>
+          <h3 className="footer-title">ShopSwift</h3>
           <p className="footer-tagline">Your one-stop shop for all your needs</p>
         </div>
         <div className="footer-links">
@@ -18,7 +18,7 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2023 SalesSavvy. All rights reserved.</p>
+        <p>© 2025 ShopSwift. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -84,7 +84,7 @@ body {
 /* Form Label */
 .form-label {
   font-size: 0.9rem;
-  color: #00ABE4;
+  color: #e173f0;
   margin-bottom: 4px;
 }
 
@@ -93,7 +93,7 @@ body {
 .form-select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #00ABE4;
+  border: 1px solid #d668e5;
   border-radius: 6px;
   font-size: 1rem;
   outline: none;
@@ -102,8 +102,8 @@ body {
 
 .form-input:focus,
 .form-select:focus {
-  border-color: #0078a0;
-  box-shadow: 0 0 4px #00ABE4;
+  border-color: #be40ce;
+  box-shadow: 0 0 4px #c95dd7;
 }
 
 /* Button */
@@ -113,7 +113,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background-color: #00ABE4;
+  background-color:#e173f0;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -121,18 +121,18 @@ body {
 }
 
 .form-button:hover {
-  background-color: #0078a0;
+  background-color: #e173f0;
 }
 
 /* Footer */
 .form-footer {
   font-size: 0.9rem;
   margin-top: 16px;
-  color: #00ABE4;
+  color: #e173f0;
 }
 
 .form-link {
-  color: #0078a0;
+  color: #e173f0;
   text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #00ABE4;
+  background-color: #d67ae2;
 }
 
 /* Product List */
@@ -190,17 +190,17 @@ nav button:hover {
 .product-card h3 {
   font-size: 1.2rem;
   margin: 12px 0;
-  color: #333;
+  color: #ee56f6;
 }
 
 .product-card p {
   font-size: 1rem;
-  color: #666;
+  color: #ef90e9;
 }
 
 .product-card button {
   margin-top: 12px;
-  background-color: #00ABE4;
+  background-color: #e173f0;
   color: white;
   border: none;
   border-radius: 6px;
@@ -210,7 +210,7 @@ nav button:hover {
 }
 
 .product-card button:hover {
-  background-color: #0078a0;
+  background-color: #dd70ee;
 }
 
 /* Cart Icon */
@@ -270,7 +270,7 @@ nav button:hover {
 }
 
 .profile-dropdown .profile-button{
-  background-color: #00abe463;
+  background-color: #e17bef63;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -287,7 +287,7 @@ nav button:hover {
 
 /* Header */
 .header {
-  background-color: #00ABE4;
+  background-color: #d06ce9;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -354,7 +354,7 @@ nav button:hover {
 /* Navigation */
 
 .navigation {
-  background-color: #00ABE4;
+  background-color: #e980f7;
   width: 100%;
   display: grid;
 }
@@ -430,13 +430,13 @@ nav button:hover {
 }
 
 .product-price {
-  color: #00ABE4;
+  color: #c16edf;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
 .add-to-cart-btn {
-  background-color: #00ABE4;
+  background-color: #d774ef;
   color: white;
   padding: 10px;
   border: none;
@@ -446,7 +446,7 @@ nav button:hover {
 }
 
 .add-to-cart-btn:hover {
-  background-color: #007B9E;
+  background-color: #d265e6;
 }
 
 /* Footer */
@@ -464,7 +464,7 @@ nav button:hover {
 
 .footer-links a {
   margin-right: 15px;
-  color: #00ABE4;
+  color: #c35ae2;
   text-decoration: none;
   font-size: 14px;
 }
@@ -504,7 +504,7 @@ nav button:hover {
   z-index: 100;
 }
 .profile-dropdown:hover .dropdown-menu{
-  background-color: #55cbf2;
+  background-color: #cf65f2;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -638,7 +638,7 @@ background-attachment: fixed;
 }
 
 .dashboard-header {
-  background-color: #0078d4;
+  background-color: #da71ec;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -676,7 +676,7 @@ background-attachment: fixed;
 
 .dashboard-header .dropdown-button:hover {
   background-color: white;
-  color: #0078d4;
+  color: #e05cf2;
 }
 
 .dashboard-content {
@@ -759,7 +759,7 @@ font-style: oblique;
 }
 
 .launch-button {
-  background-color: #0078d4;
+  background-color: #d02fe5;
   color: white;
   border: none;
   border-radius: 5px;
@@ -769,6 +769,5 @@ font-style: oblique;
 }
 
 .launch-button:hover {
-  background-color: #005a9e;
+  background-color: #cb5fdb;
 }
-

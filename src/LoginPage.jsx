@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./assets/styles.css";
+import "./assets/styles.css";   // ✅ Correct path
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -20,9 +20,7 @@ export default function LoginPage() {
     try {
       const response = await fetch("http://localhost:9090/api/auth/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({ username, password }),
       });
@@ -30,20 +28,14 @@ export default function LoginPage() {
       const data = await response.json();
 
       if (response.ok) {
-        if (data.role === "CUSTOMER") {
-          navigate("/customerhome");
-        } else if (data.role === "ADMIN") {
-          navigate("/adminhome");
-        } else {
-          navigate("/"); // Redirect to a default page if role is unknown
-        }
+        if (data.role === "CUSTOMER") navigate("/customerhome");
+        else if (data.role === "ADMIN") navigate("/adminhome");
+        else navigate("/");
       } else {
-        const errorMessage =
-          data.error || "Something went wrong. Please try again.";
-        throw new Error(errorMessage);
+        throw new Error(data.error || "Something went wrong");
       }
     } catch (err) {
-      setError(err.message || "Unexpected error occurred");
+      setError(err.message);
     }
   };
 
@@ -52,40 +44,45 @@ export default function LoginPage() {
       <div className="page-container">
         <div className="form-container">
           <h1 className="form-title">Login</h1>
+
           {error && <p className="error-message">{error}</p>}
+
           <form onSubmit={handleSignIn} className="form-content">
             <div className="form-group">
-              <label htmlFor="username" className="form-label">
+              <label className="form-label" htmlFor="username">
                 Username
               </label>
               <input
+                className="form-input"
                 id="username"
                 type="text"
-                placeholder="Enter your username"
+                placeholder="Enter username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
-                className="form-input"
               />
             </div>
+
             <div className="form-group">
-              <label htmlFor="password" className="form-label">
+              <label className="form-label" htmlFor="password">
                 Password
               </label>
               <input
+                className="form-input"
                 id="password"
                 type="password"
-                placeholder="Enter your password"
+                placeholder="Enter password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="form-input"
               />
             </div>
+
             <button type="submit" className="form-button">
               Sign In
             </button>
           </form>
+
           <div className="form-footer">
             <a href="/register" className="form-link">
               New User? Sign up here

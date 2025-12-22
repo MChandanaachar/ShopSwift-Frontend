@@ -23,13 +23,14 @@ export default function CustomerHomePage() {
   const fetchProducts = async (category = '') => {
     try {
       const response = await fetch(
-        `http://localhost:9090/api/products${category ? `?category=${category}` : '?category=Shirts'}`, 
+        `http://localhost:9090/api/products${category ? `?category=${category}` : '?category=Electronics'}`, 
         { credentials: 'include' } // Include authToken as a cookie
       );
       const data = await response.json();
       if(data)
      { 
-      setUsername(data.user?.name || 'Guest'); // Extract username
+      setUsername(username || 'Guest');
+ // Extract username
       setProducts(data.products || []);
     }else{
       setProducts([]);

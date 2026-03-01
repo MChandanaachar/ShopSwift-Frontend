@@ -263,7 +263,8 @@ const AdminDashboard = () => {
         setResponse({ message: `Error: ${errorMessage}` });
         setModalType("dailyBusiness");
       }
-    } catch (error) {
+    } 
+    catch (error) {
       console.error("Error fetching user details:", error);
       setResponse({ message: "Error: Something went wrong" });
       setModalType("dailyBusiness");
